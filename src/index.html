@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ImageSlider</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body onload="slider()">
+    <!-- ..........navigation Bar............. -->
+<!-- ..............navigation bar..................... -->
+<div class="header">
+    
+
+    <nav>
+        <img src="../assets/logo.jpeg" class="logo">
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../src/services.html">Services</a></li>
+            <li><a href="../src/projects.html">Projects</a></li>
+            <li><a href="../src/aboutUs.html">about us</a></li>
+            <li><a href="../src/contact.html">contact</a></li>
+            <li><a href="../src/testimonial.html">Testimonials</a></li>
+        </ul>
+        </nav>
+    </div>
+    <!-- ............... -->
+    <div class="banner">
+        <div class="slider">
+            <img src="s2.jpeg" id="slideImg">
+        </div>
+        <div class="overlay">
+            <div class="navbar">
+                <!-- <div class="logo"> -->
+                    <!-- <img src="../assets/logo1.png"> -->
+                </div>
+            </div>
+            <div class="content">
+                <h1>Design Your Dream Home in Style</h1>
+                <h3>subscribe easy tutorials youtube channel t0 watch more videos press the bell icon to get latest updates</h3>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        var slideImg=document.getElementById("slideImg");
+        var images=new Array(
+            "../assets/i1.png",
+            "../assets/i2.jpeg",
+            "../assets/s3.jpeg",
+            "../assets/s4.jpeg"
+        );
+        var len=images.length;
+        var i=0;
+        function slider(){
+            if(i>len-1){
+                i=0;
+            }
+            slideImg.src= images[i];
+            i++;
+            setTimeout('slider()',3000);
+        }
+    </script>
+   
+    
+</body>
+</html>
