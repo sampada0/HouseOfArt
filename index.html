@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+    <link rel="stylesheet" href="./src/video.css">
+
+    <style>
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #f2f2f2;
+			margin: 0;
+			padding: 0;
+		}
+		
+		
+		.text {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			font-size: 48px;
+			font-weight: bold;
+			color: rgb(15, 15, 15);
+			opacity: 0;
+			animation: slide-top 1s ease-in-out forwards;
+			animation-delay: 1s;
+		}
+		@keyframes slide-top {
+			from {
+				transform: translate(-50%, -150%);
+				opacity: 0;
+			}
+			to {
+				transform: translate(-50%, -50%);
+				opacity: 1;
+			}
+		}
+        
+
+
+        /* ................FAQ..................... */
+        
+ .faq{
+    background-color: black;
+    padding: 10px 12%;
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 0%;
+}
+.faq p{
+    color: white;
+    font-size: 20px;
+
+}
+.faq h2{
+    color:white;
+    /* text-shadow: 2px 2px red; */
+    font-weight: 500px;
+    font-size: 50px;
+    margin-top: 8%;
+    
+
+}
+.accordion{
+    margin: 60px auto;
+    width: 100%;
+    max-width: 750px;
+}
+.accordion li{
+    list-style: none;
+    width: 100%;
+    padding: 5px;
+}
+.accordion li label{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    background: #303030;
+    color: white;
+    margin-bottom: 2px;
+    cursor: pointer;
+    position: relative;
+}
+label::after{
+    content: '+';
+    font-size: 34px;
+    position: absolute;
+    right: 20px;
+    transition: transform 0.5s;
+
+}
+input[type="radio"]{
+    display: none;
+}
+.accordion .content{
+    background: #303030;
+    text-align: left;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    /* transition: max-height 0.5s,padding 0.5s; */
+}
+/* .accordion input[type="radio"]:checked + label + .content{
+    max-height: 600px;
+    padding: 30px 20px;
+}
+.accordion input[type="radio"]:checked + label::after{
+    transform: rotate(135deg);
+} */
+
+.content{
+    max-height: 0px ;
+    padding: 0px 20px;
+    transition: max-height 0.5s, padding 0.5s;
+
+}
+
+.content.active{
+  max-height: 600px;
+  padding: 30px 20px;
+}
+        
+	</style>
+</head>
+<body>
+    
+    <!----................video................-->
+    
+    <div class="hero">
+
+        <video autoplay loop muted plays-inline class="back-video">
+            <source src="./assets/v4.mp4" type="video/mp4">
+
+        </video>
+        <!-- --.............navigation bar................... -->
+        <nav>
+           
+         <img src="./assets/logo.jpeg" class="logo">
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./src/services.html">Services</a></li>
+                <li><a href="./src/projects.html">Projects</a></li>
+                <li><a href="./src/aboutUs.html">About us</a></li>
+                <li><a href="./src/contact.html">Contact</a></li>
+                <li><a href="./src/testimonial.html">Testimonials</a></li>
+            </ul>
+        </nav>
+        <hr>
+            <div class="content">
+                <h1 class="text">House Of Art</h1>
+                <!-- <a href="./src/index.html">More...</a> -->
+            </div>
+    
+    </div>
+
+
+    <!--......................services we provide...................-->
+    <section class="course">
+        <h1>Services we Provide</h1>
+        <p>“Always give people more than what they expect to get.”</p>
+        
+        <div class="row">
+            <div class="course-col">
+                <h3>PLANNING</h3>
+                
+                <p>Construction planning is an important step when building a structure because it outlines the project and provides guidelines to ensure the project is a success. Project managers know that having a thorough construction plan can save them time and money.</p>
+            </div>
+        
+        
+            <div class="course-col">
+                <h3>CONSTRUCTION</h3>
+                <p>Construction Services means all labor, services and materials provided in connection with the construction, alteration, repair, demolition, reconstruction or any other improvements to a real property.
+                 </p>
+            </div>
+        
+        
+            <div class="course-col">
+                <h3>CONSULTATION</h3>
+                <p>A construction consultant is a professional hired to offer expertise towards the successful and timely completion of a construction project. They are tasked with assessing the building costs and contracts for construction projects
+             </p>
+                
+            </div>
+
+            <div class="course-col">
+                <h3> MAINTAINANCE</h3>
+                <p>Building maintenance refers to activities performed to retain and restore the functionality of residential and commercial properties. It includes tasks such as cleaning, landscaping, waterproofing and electrical system maintenance. It aims to preserve a safe, functional, and comfortable environment for tenants at all times.
+                </p>
+            </div>
+        </div>
+        
+        </section>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <!-- .................specialized............... -->
+        <center>
+        <section class="course1">
+            <h1>we are specialized</h1>
+          
+           
+            <div class="ro">
+            
+                
+                  <center>
+                 <div class="course-co" > 
+                    <!-- <h3>we are specialized</h3> -->
+                   
+                    <p>Rachnakar construction is a professionally managed Group engaged in imparting great services in the domain of residential and commercial constructions</p>
+        
+                </div>
+                 </center>
+              
+            </section>
+      
+        </center>
+            <br><br>
+            <br><br>
+    
+<!-- ...................FAQ..................... -->
+
+
+<div class="faq">
+    <h2>Frequently Asked Questions</h2><hr>
+    <ul class="accordion">
+       <li>
+           <input type="radio" name="accordion" id="first">
+           <label for="first"> What kind of construction do you specialize in?</label>
+           <div class="content">
+               <p>If you’re a general contractor, this is your place to boast about the variety of work that you’ve done and how versatile your skills are. Or, talk about your one favorite area of work. For specialized construction teams, such as roofers or commercial remodeling construction companies, this is where you can talk all about the projects that you have undertaken in the past and the work that you are capable of doing. </p>
+           </div>
+       </li>
+       <li>
+           <input type="radio" name="accordion" id="second">
+           <label for="second"> Do you have your own crew or do you hire subcontractors?</label>
+           <div class="content">
+               <p>A lot of contractors hire out to subcontractors once they bid on or land a job. Others may subcontract for parts of the job or if they can’t find labor. In any case, people will often want to know about this because they’ll want to know who is actually doing the work. Take this question and use it as a place to reassure your clients that even if you do subcontract, you only work with the best professionals in your area. 
+
+               </p>
+           </div>
+       </li>
+       <li>
+           <input type="radio" name="accordion" id="third">
+           <label for="third">Do you provide the services of an Architecture?</label>
+           <div class="content">
+               <p>Yes, Rachanakar Construction have an in-house Architecture team, which implies that availing the service of an Architect is included in the services provided by Rachanakar Construction.<br>
+                This becomes important because many a time, the Design Architect gives priority for just the design excellence.
+            </p>
+           </div>
+       </li>
+       <li>
+           <input type="radio" name="accordion" id="four">
+           <label for="four">How long do you normally take to complete the construction of a house?</label>
+           <div class="content">
+               <p>The normal construction duration of a house is approximately 12-14 months.
+
+                It does not necessarily mean that you would always require 12-14 months to construct the house.
+                
+                There is lot of buffer period provided, so that the common deterrents like labour problems, material non-availability, rains and strikes which actually effect construction in a site, are factored in.
+                Considering all these factors, it appears that 12-14 months is a very good time under which a customer can expect the house construction to be completed.
+                
+                In specific cases where the customer requires the house to be constructed in a much faster period of time, it is very much possible.</p>
+           </div>
+       </li>
+       <li>
+           <input type="radio" name="accordion" id="fifth">
+           <label for="fifth">What is your service area?</label>
+           <div class="content">
+               <p>We primarily work in the eastern suburbs and north shore region of Sydney, but are open to travelling farther afield depending on the project.</p>
+           </div>
+       </li>
+       <li>
+           <input type="radio" name="accordion" id="sixth">
+           <label for="sixth">How do you charge for projects? By the hour, job, etc.?
+        </label>
+           <div class="content">
+               <p>This is another big one. People want to know what they’re going to spend and how they’re going to spend it. Some contractors charge hourly rates. Others charge by the job. Some include materials, while others will offer to include them for an additional charge. It doesn’t matter how you charge, so long as you explain it to people. Provide it here in your FAQs and make sure that you’ve got a page for billing, payments, estimates, and quotes, too, so that people can find the information in more than one place. </p>
+           </div>
+       </li>
+    </ul>
+    
+   </form>
+
+  </div>
+  <br><br>
+
+  <!-- ..........................BG IMG ..................... -->
+  <section>
+    <div class="bg">
+       
+     <h3> Stop dreaming about your dream <br><span>Home</span> and start living it.</h3>
+    </div>
+       
+</section>
+  <!-- .............footer.................... -->
+
+  <div class="container1">
+    <div class="footer-left">
+      <h3>Rachnakar Construction</h3>
+      <p>1234 Main St.</p>
+      <p>City, State ZIP</p>
+      <p>Phone: 7743951537</p>
+      <p>Email: rachanakarconstruction@gmail.com</p>
+    </div>
+    <div class="footer-right">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./src/services.html">Services</a></li>
+        <li><a href="./src/projects.html">Projects</a></li>
+        <li><a href="./src/aboutUs.html">About Us</a></li>
+        <li><a href="./src/contact.html">Contact Us</a></li>
+        <li><a href="./src/testimonial.html">Testimonials</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2023 Rachnakar Construction. All rights reserved.</p>
+  </div>
+</footer>
+
+<script>
+    const allLabels = document.querySelectorAll('.accordion label');
+    allLabels.forEach(lable => {
+        lable.addEventListener('click', (event) => {
+            const previousElement = document.querySelector('.content.active');
+            const currentElement = event.target.nextElementSibling
+
+            if(previousElement !== currentElement){
+                if(previousElement){
+                    previousElement.classList.remove('active')
+                }
+            }
+            event.target.nextElementSibling.classList.toggle('active');
+        })
+    })
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
