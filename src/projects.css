@@ -60,6 +60,8 @@
 
    .container{
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
    }
    body{
     display: flex;
@@ -67,6 +69,7 @@
     height: 100vh;
     background: whitesmoke;
     align-items: center;
+    
    }
    .card{
     height: 500px;
