@@ -173,10 +173,10 @@ nav ul li a:hover::after{
     .bg h3{
       font-size: 50px;
       color: black; 
-      margin-top: 9%;
+      margin-top: 8%;
       margin-left: 45%;
       text-align: center;
-      text-shadow: 5px 5px 10px black ;
+      text-shadow: 5px 5px 10px black;
     }
 
     h3 span{
@@ -319,6 +319,36 @@ nav ul li a:hover::after{
         .course-co:hover{
           box-shadow: 0 0 20px 0px black;
       }
+
+
+
+      /* ,,,,,,,,,,, */
+      .services{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(25rem,1fr));
+        gap:1.5rem;
+        background: #c4b4b4;
+   }
+   .services .icons{
+       display: flex;
+       align-items: center;
+       gap: 1.5rem;
+       padding: 2rem 0;
+   }
+   .services .icons i{
+       font-size: 3.5rem;
+       color: rgb(199, 121, 3);
+   }
+   .services .icons h3{
+       font-size: 2.2rem;
+       color: var(--black);
+       padding-bottom: .5rem;
+   }
+   .services .icons p{
+       font-size: 1.5rem;
+       color: var(--light-color);
+   }
+   
 
    
     
